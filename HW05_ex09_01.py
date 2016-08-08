@@ -8,10 +8,20 @@
 
 # Body
 
+name = input("Enter file:")
+if len(name) < 1 : name = "words.txt"
+handle = open(name)
+
+def counter():
+	for line in handle:
+		line.strip()
+		if len(line) > 20:
+			print (line)
 
 ##############################################################################
 def main():
-    pass  # Call your functions here.
+      # Call your functions here.
+	counter()
 
 if __name__ == '__main__':
     main()
